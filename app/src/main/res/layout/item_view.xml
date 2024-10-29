@@ -55,7 +55,8 @@
                 android:layout_weight="4"
                 android:layout_margin="10dp"
                 android:scaleType="centerCrop"
-                app:cardCornerRadius="50dp"/>
+                app:cardCornerRadius="50dp"
+                android:id="@+id/imageView"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"

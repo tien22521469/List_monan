@@ -6,18 +6,10 @@ import android.graphics.drawable.Drawable;
 import androidx.core.content.ContextCompat;
 
 public class Item {
-    private int imageResource;
     private String title;
     private String description1;
     private String description2;
-
-    public Drawable getImageResource(Context context) {
-        return ContextCompat.getDrawable(context, imageResource);
-    }
-
-    public void setImageResource(int imageResource) {
-        this.imageResource = imageResource;
-    }
+    int Image;
 
     public String getTitle() {
         return title;
@@ -43,10 +35,18 @@ public class Item {
         this.description2 = description2;
     }
 
-    public Item(int imageResource, String title, String description1, String description2) {
-        this.imageResource = imageResource;
+    public int getImage() {
+        return Image;
+    }
+
+    public void setImage(int image) {
+        Image = image;
+    }
+
+    public Item(String title, String description1, String description2, int image) {
         this.title = title;
         this.description1 = description1;
         this.description2 = description2;
+        Image = image;
     }
 }

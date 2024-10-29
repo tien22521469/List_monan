@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
 
         List<Item> items = new ArrayList<Item>();
-        items.add(new Item(R.drawable.anh1,"Món mặn","thinh","quang"));
-        items.add(new Item(R.drawable.anh2,"Món chay","thinh","quang"));
+        items.add(new Item("MÓN MẶN","thinh","quang",R.drawable.anh1));
+        items.add(new Item("MÓN CHAY","thinh","quang",R.drawable.anh2));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new MyAdapter(getApplicationContext(),items));

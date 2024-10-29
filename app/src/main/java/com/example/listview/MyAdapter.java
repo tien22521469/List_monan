@@ -30,9 +30,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         holder.tvSanPham.setText(items.get(position).getDescription1());
         holder.tvDangGiam.setText(items.get(position).getDescription2());
         holder.tvMonAn.setText(items.get(position).getTitle());
-        holder.materialCardView.setBackgroundDrawable(items.get(position).getImageResource(holder.itemView.getContext()));
+        holder.imageView.setImageResource(items.get(position).getImage());
 
-//        holder.materialCardView.setBackground(items.get(position).getImageResource());
     }
 
     @Override
